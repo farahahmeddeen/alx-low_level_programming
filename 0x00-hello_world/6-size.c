@@ -1,10 +1,7 @@
 #include  <stdio.h>
 /**
- * main-Entry point
- *
- * Description:'a program that prints the size of various types on the computer it is compiled and run on using printf'
- *
- * retun: 0 (success)
+ * main - a program that prints the size of various computer types.
+ * Return: 0 (success)
  */
 
 int main(void)
