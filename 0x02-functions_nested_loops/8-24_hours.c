@@ -1,9 +1,25 @@
 #include "main.h"
+/**
+ * jack_bauer - function to print hours and minutes
+ *
+ * Return: 0 (success)
+ */
 
 void jack_bauer(void)
 {
-	int h;
-	int m;
+	int a;
+	int b;
 
-	for (h = 0 ; h < 24 ; h++)
+	for (a = 0 ; a < 24 ; a++)
+	{
+		for (b = 0 ; b < 60 ; b++)
+		{
+			_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			_putchar(':');
+			_putchar(b / 10 + '0');
+			_putchar(b % 10 + '0');
+			_putchar('\n');
+		}
+	}
 }
