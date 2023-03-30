@@ -24,7 +24,7 @@ char *rot13(char *y)
 
 	for (i = 0; y[i] != '\0' ; i++)
 	{
-		for (j = 0 ; ori[j] != '\0' ; j++)
+		for (j = 0 ; j < 53 ; j++)
 		{
 			if (y[i] == ori[j])
 				y[i] = rotate[j];
