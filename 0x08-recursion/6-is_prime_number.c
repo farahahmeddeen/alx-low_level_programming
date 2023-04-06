@@ -15,7 +15,7 @@ int is_prime_number_helper(int n, int y)
 	else if (n % y == 0)
 		return (0);
 	else if (y * y <= n)
-		return(is_prime_number_helper(n, y + 1));
+		return (is_prime_number_helper(n, y + 1));
 	else
 		return (1);
 }
