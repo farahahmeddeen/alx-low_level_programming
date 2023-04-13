@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	i = strlen(s1);
 	j = strlen(s2);
-	if (n >= j)
+	if (n > j)
 		fa = malloc((i + j + 1) * sizeof(char));
 	else
 		fa = malloc((i + n + 1) * sizeof(char));
@@ -38,7 +38,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		else
 			fa[k] = s2[m++];
 	}
-	fa[i + n] = '\0';
+	if (n < j)
+		fa[i + n] = '\0';
+	else
+		fa[i + j] = '\0';
 	return (fa);
 
 }
