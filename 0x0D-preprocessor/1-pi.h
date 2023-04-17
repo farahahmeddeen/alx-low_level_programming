@@ -1,4 +1,4 @@
-#ifndef deen_h
-#define deen_h
+#ifndef pi
+#define pi
 #define PI 3.14159265359
 #endif
