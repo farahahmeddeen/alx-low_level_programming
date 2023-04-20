@@ -12,8 +12,9 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	va_list fa;
 	char *s;
-	char *sep = "";
+	char *sep;
 
+	sep = "";
 	va_start(fa, format);
 	while (format[i] && format)
 	{
